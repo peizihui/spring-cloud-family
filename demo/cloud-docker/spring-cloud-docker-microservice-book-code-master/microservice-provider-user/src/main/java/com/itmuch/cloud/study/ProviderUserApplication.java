@@ -7,8 +7,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 
 // autoRegister = false 代表不注册到Eureka Server
-//@EnableDiscoveryClient(autoRegister = false)
-@EnableEurekaClient
+@EnableDiscoveryClient
+//@EnableEurekaClient
 @SpringBootApplication
 public class ProviderUserApplication {
   public static void main(String[] args) {

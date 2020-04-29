@@ -1,7 +1,13 @@
+# 未指定profiles 代表全局通用
+# --- 分隔符，代表不同的profiles
+
 spring:
   application:
     name: microservice-discovery-eureka-ha
+
 ---
+
+# --- 分隔符，代表不同的profiles  peer1
 spring:
   profiles: peer1                                 # 指定profile=peer1
 server:
@@ -14,6 +20,8 @@ eureka:
       defaultZone: http://peer2:8762/eureka/      # 将自己注册到peer2这个Eureka上面去
 
 ---
+
+# --- 分隔符，代表不同的profiles  peer2
 spring:
   profiles: peer2
 server:
